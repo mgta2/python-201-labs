@@ -1,0 +1,23 @@
+Create a new folder. Inside of that folder:
+1. Create a new Python virtual environment
+2. Activate the virtual environment
+3. Install three external packages in the virtual environment.
+4. Freeze the installed packages to a `requirements.txt` file.
+5. Deactivate the virtual environment.
+6. Delete the virtual environment.
+7. Create a new virtual environment.
+8. Install the packages that you recorded in the `requirements.txt` file.
+
+
+Solution:
+
+(3) mypy, loguru, pyright
+(4) pip freeze -l > requirements.txt
+(8) https://docs.python.org/3/tutorial/venv.html
+	In particular:
+	python3 -m pip install -r requirements.txt
+Where requirements.txt is inside the venv folder AND we are in (venv) in the CLI.
+
+Purpose of this task:
+
+Can send this requirements.txt to someone else who wants to work on the same project as you (e.g. via Github)

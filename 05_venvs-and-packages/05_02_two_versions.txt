@@ -1,0 +1,41 @@
+Create two separate virtual environments in two different folders.
+- Activate the first one, and install the Django package with the specific
+  version 1.8 then freeze your dependencies into a `requirements.txt` file.
+  Then deactivate the first virtual environment.
+- Repeat the process with your second venv, but install Django 2.2 instead.
+- Compare the two `requirements.txt` files and post their content below.
+
+They differ in that v1.8 has 'Django==1.8.19' while v2.2 has 'Django==2.2.24, pytz==2021.3, sqlparse==0.4.2'.
+(Note both also have mypy, loguru and pyright from the previous lab).
+
+(1)
+aiocontextvars==0.2.2
+contextvars==2.4
+Django==1.8.19
+immutables==0.16
+loguru==0.5.3
+mypy==0.910
+mypy-extensions==0.4.3
+nodeenv==1.6.0
+pkg-resources==0.0.0
+pyright==0.0.12
+toml==0.10.2
+typed-ast==1.4.3
+typing-extensions==4.0.0
+
+(2)
+aiocontextvars==0.2.2
+contextvars==2.4
+Django==2.2.24
+immutables==0.16
+loguru==0.5.3
+mypy==0.910
+mypy-extensions==0.4.3
+nodeenv==1.6.0
+pkg-resources==0.0.0
+pyright==0.0.12
+pytz==2021.3
+sqlparse==0.4.2
+toml==0.10.2
+typed-ast==1.4.3
+typing-extensions==4.0.0
